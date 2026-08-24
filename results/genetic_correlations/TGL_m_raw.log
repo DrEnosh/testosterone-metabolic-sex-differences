@@ -1,0 +1,119 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out ./gen_cor/TGL_m_raw \
+--rg ./munge/TGL_m_raw_v3.sumstats.gz,./munge/GHb_m_raw_v3.sumstats.gz,./munge/HDL_m_raw_v3.sumstats.gz,./munge/LDL_m_raw_v3.sumstats.gz \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Wed Aug  5 10:42:34 2026
+Reading summary statistics from ./munge/TGL_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1191361 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170807 SNPs remain.
+After merging with regression SNP LD, 1170807 SNPs remain.
+Computing rg for phenotype 2/4
+Reading summary statistics from ./munge/GHb_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170807 SNPs remain.
+1170807 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1781 (0.0328)
+Lambda GC: 1.2764
+Mean Chi^2: 1.6263
+Intercept: 1.038 (0.0351)
+Ratio: 0.0606 (0.056)
+
+Heritability of phenotype 2/4
+-----------------------------
+Total Observed scale h2: 0.1102 (0.0103)
+Lambda GC: 1.2464
+Mean Chi^2: 1.4166
+Intercept: 1.0607 (0.0204)
+Ratio: 0.1458 (0.0489)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0388 (0.0058)
+Mean z1*z2: 0.2468
+Intercept: 0.1382 (0.0081)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.277 (0.0559)
+Z-score: 4.9572
+P: 7.15e-07
+
+Computing rg for phenotype 3/4
+Reading summary statistics from ./munge/HDL_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170807 SNPs remain.
+1170796 SNPs with valid alleles.
+
+Heritability of phenotype 3/4
+-----------------------------
+Total Observed scale h2: 0.1973 (0.0276)
+Lambda GC: 1.3719
+Mean Chi^2: 1.7135
+Intercept: 1.1239 (0.0548)
+Ratio: 0.1736 (0.0769)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.112 (0.0223)
+Mean z1*z2: -0.7536
+Intercept: -0.4221 (0.015)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.5973 (0.0641)
+Z-score: -9.3141
+P: 1.2305e-20
+
+Computing rg for phenotype 4/4
+Reading summary statistics from ./munge/LDL_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170807 SNPs remain.
+1170805 SNPs with valid alleles.
+
+Heritability of phenotype 4/4
+-----------------------------
+Total Observed scale h2: 0.067 (0.0234)
+Lambda GC: 1.1811
+Mean Chi^2: 1.338
+Intercept: 1.1184 (0.074)
+Ratio: 0.3503 (0.2191)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0236 (0.0092)
+Mean z1*z2: 0.2582
+Intercept: 0.1885 (0.0135)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.2141 (0.0842)
+Z-score: 2.5438
+P: 0.011
+
+
+Summary of Genetic Correlation Results
+p1                                p2      rg      se       z           p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+./munge/TGL_m_raw_v3.sumstats.gz  ./munge/GHb_m_raw_v3.sumstats.gz  0.2770  0.0559  4.9572  7.1500e-07  0.1102     0.0103  1.0607     0.0204    0.1382       0.0081
+./munge/TGL_m_raw_v3.sumstats.gz  ./munge/HDL_m_raw_v3.sumstats.gz -0.5973  0.0641 -9.3141  1.2305e-20  0.1973     0.0276  1.1239     0.0548   -0.4221       0.0150
+./munge/TGL_m_raw_v3.sumstats.gz  ./munge/LDL_m_raw_v3.sumstats.gz  0.2141  0.0842  2.5438  1.0966e-02  0.0670     0.0234  1.1184     0.0740    0.1885       0.0135
+
+Analysis finished at Wed Aug  5 10:43:07 2026
+Total time elapsed: 32.91s

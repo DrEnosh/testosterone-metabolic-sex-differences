@@ -1,0 +1,25 @@
+Trait_1,Trait_2,Sex_1,Sex_2,Metabolic_Trait,Transformation,rg,SE,rg_95CI_Lower,rg_95CI_Upper,Z,P,Filename
+Testosterone (F),Diastolic Blood Pressure (M),Female,Male,Diastolic Blood Pressure,IRNT,0.1919,0.0817,0.03176799999999999,0.352032,2.3484,0.0189,testo_F_vs_DBP_M_irnt.log
+Testosterone (F),Glycated Haemoglobin (HbA1c) (M),Female,Male,Glycated Haemoglobin (HbA1c),IRNT,0.0717,0.0336,0.005844000000000002,0.137556,2.1345,0.0328,testo_F_vs_GHb_M_irnt.log
+Testosterone (F),HDL Cholesterol (M),Female,Male,HDL Cholesterol,IRNT,-0.0447,0.0296,-0.102716,0.013316000000000001,-1.5092,0.1312,testo_F_vs_HDL_M_irnt.log
+Testosterone (F),LDL Cholesterol (M),Female,Male,LDL Cholesterol,IRNT,-0.0855,0.0477,-0.17899199999999998,0.007991999999999985,-1.7924,0.0731,testo_F_vs_LDL_M_irnt.log
+Testosterone (F),Systolic Blood Pressure (M),Female,Male,Systolic Blood Pressure,IRNT,0.0987,0.0849,-0.067704,0.265104,1.1626,0.245,testo_F_vs_SBP_M_irnt.log
+Testosterone (F),Triglycerides (M),Female,Male,Triglycerides,IRNT,-0.0589,0.0375,-0.1324,0.014599999999999995,-1.5696,0.1165,testo_F_vs_TGL_M_irnt.log
+Testosterone (M),Diastolic Blood Pressure (F),Male,Female,Diastolic Blood Pressure,IRNT,-0.2335,0.0642,-0.359332,-0.10766800000000004,-3.6365,0.0003,testo_M_vs_DBP_F_irnt.log
+Testosterone (M),Glycated Haemoglobin (HbA1c) (F),Male,Female,Glycated Haemoglobin (HbA1c),IRNT,-0.2085,0.0253,-0.258088,-0.158912,-8.2278,0.0,testo_M_vs_GHb_F_irnt.log
+Testosterone (M),HDL Cholesterol (F),Male,Female,HDL Cholesterol,IRNT,0.3314,0.0266,0.27926399999999996,0.383536,12.4716,0.0,testo_M_vs_HDL_F_irnt.log
+Testosterone (M),LDL Cholesterol (F),Male,Female,LDL Cholesterol,IRNT,0.0565,0.049,-0.03954,0.15254,1.1534,0.2487,testo_M_vs_LDL_F_irnt.log
+Testosterone (M),Systolic Blood Pressure (F),Male,Female,Systolic Blood Pressure,IRNT,-0.1918,0.0567,-0.302932,-0.080668,-3.3809,0.0007,testo_M_vs_SBP_F_irnt.log
+Testosterone (M),Triglycerides (F),Male,Female,Triglycerides,IRNT,-0.3155,0.0339,-0.381944,-0.249056,-9.3088,0.0,testo_M_vs_TGL_F_irnt.log
+Testosterone (F),Diastolic Blood Pressure (M),Female,Male,Diastolic Blood Pressure,Raw,0.2348,0.0948,0.04899200000000001,0.420608,2.4772,0.0132,testo_F_vs_DBP_M_raw.log
+Testosterone (F),Glycated Haemoglobin (HbA1c) (M),Female,Male,Glycated Haemoglobin (HbA1c),Raw,0.0952,0.0404,0.016016000000000016,0.17438399999999998,2.354,0.0186,testo_F_vs_GHb_M_raw.log
+Testosterone (F),HDL Cholesterol (M),Female,Male,HDL Cholesterol,Raw,-0.06,0.0306,-0.119976,-2.4000000000003185e-05,-1.9609,0.0499,testo_F_vs_HDL_M_raw.log
+Testosterone (F),LDL Cholesterol (M),Female,Male,LDL Cholesterol,Raw,-0.09,0.051,-0.18996,0.009959999999999997,-1.7641,0.0777,testo_F_vs_LDL_M_raw.log
+Testosterone (F),Systolic Blood Pressure (M),Female,Male,Systolic Blood Pressure,Raw,0.1497,0.1014,-0.049044000000000004,0.348444,1.4755,0.1401,testo_F_vs_SBP_M_raw.log
+Testosterone (F),Triglycerides (M),Female,Male,Triglycerides,Raw,-0.0457,0.0419,-0.127824,0.036424000000000005,-1.0921,0.2748,testo_F_vs_TGL_M_raw.log
+Testosterone (M),Diastolic Blood Pressure (F),Male,Female,Diastolic Blood Pressure,Raw,-0.2438,0.0666,-0.374336,-0.11326399999999998,-3.6634,0.0002,testo_M_vs_DBP_F_raw.log
+Testosterone (M),Glycated Haemoglobin (HbA1c) (F),Male,Female,Glycated Haemoglobin (HbA1c),Raw,-0.2561,0.0283,-0.311568,-0.200632,-9.0468,0.0,testo_M_vs_GHb_F_raw.log
+Testosterone (M),HDL Cholesterol (F),Male,Female,HDL Cholesterol,Raw,0.3195,0.0266,0.267364,0.371636,12.0104,0.0,testo_M_vs_HDL_F_raw.log
+Testosterone (M),LDL Cholesterol (F),Male,Female,LDL Cholesterol,Raw,0.0485,0.0485,-0.046560000000000004,0.14356000000000002,0.9998,0.3174,testo_M_vs_LDL_F_raw.log
+Testosterone (M),Systolic Blood Pressure (F),Male,Female,Systolic Blood Pressure,Raw,-0.1809,0.0576,-0.293796,-0.06800400000000001,-3.1379,0.0017,testo_M_vs_SBP_F_raw.log
+Testosterone (M),Triglycerides (F),Male,Female,Triglycerides,Raw,-0.3093,0.0353,-0.37848800000000005,-0.24011200000000002,-8.7721,0.0,testo_M_vs_TGL_F_raw.log

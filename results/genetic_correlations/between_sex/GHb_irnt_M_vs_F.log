@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 3.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out results\genetic_correlations\between_sex\GHb_irnt_M_vs_F \
+--rg data\processed\GHb_m_irnt_v3.sumstats.gz,data\processed\GHb_f_irnt_v3.sumstats.gz \
+--ref-ld-chr reference\eur_w_ld_chr\ \
+--w-ld-chr reference\eur_w_ld_chr\ 
+
+Beginning analysis at Mon Aug 24 13:04:12 2026
+Reading summary statistics from data\processed\GHb_m_irnt_v3.sumstats.gz ...
+Read summary statistics for 1191363 SNPs.
+Reading reference panel LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170809 SNPs remain.
+After merging with regression SNP LD, 1170809 SNPs remain.
+Computing rg for phenotype 2/2
+Reading summary statistics from data\processed\GHb_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170809 SNPs remain.
+1170809 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1965 (0.02)
+Lambda GC: 1.3685
+Mean Chi^2: 1.7431
+Intercept: 1.0945 (0.0348)
+Ratio: 0.1271 (0.0469)
+
+Heritability of phenotype 2/2
+-----------------------------
+Total Observed scale h2: 0.1802 (0.0196)
+Lambda GC: 1.3754
+Mean Chi^2: 1.7954
+Intercept: 1.1086 (0.0428)
+Ratio: 0.1365 (0.0539)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.1824 (0.0188)
+Mean z1*z2: 0.7403
+Intercept: 0.091 (0.0369)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.9693 (0.0167)
+Z-score: 57.8821
+P: 0.
+
+
+Summary of Genetic Correlation Results
+                                      p1                                       p2     rg     se       z      p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+data\processed\GHb_m_irnt_v3.sumstats.gz data\processed\GHb_f_irnt_v3.sumstats.gz 0.9693 0.0167 57.8821 0.0000  0.1802     0.0196  1.1086     0.0428    0.0910       0.0369
+
+Analysis finished at Mon Aug 24 13:04:22 2026
+Total time elapsed: 10.2s

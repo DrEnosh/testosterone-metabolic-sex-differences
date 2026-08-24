@@ -1,0 +1,200 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out ./gen_cor/testo_f_raw \
+--rg ./munge/testo_f_raw_v3.sumstats.gz,./munge/DBP_f_raw_v3.sumstats.gz,./munge/SBP_f_raw_v3.sumstats.gz,./munge/TGL_f_raw_v3.sumstats.gz,./munge/GHb_f_raw_v3.sumstats.gz,./munge/HDL_f_raw_v3.sumstats.gz,./munge/LDL_f_raw_v3.sumstats.gz \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Wed Aug  5 10:47:22 2026
+Reading summary statistics from ./munge/testo_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1191365 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170811 SNPs remain.
+After merging with regression SNP LD, 1170811 SNPs remain.
+Computing rg for phenotype 2/7
+Reading summary statistics from ./munge/DBP_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170810 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.0684 (0.0066)
+Lambda GC: 1.1364
+Mean Chi^2: 1.2277
+Intercept: 1.0206 (0.01)
+Ratio: 0.0903 (0.0438)
+
+Heritability of phenotype 2/7
+-----------------------------
+Total Observed scale h2: 0.1521 (0.029)
+Lambda GC: 1.0557
+Mean Chi^2: 1.0521
+Intercept: 1.0001 (0.0074)
+Ratio: 0.0028 (0.1412)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0003 (0.0075)
+Mean z1*z2: 0.0184
+Intercept: 0.0183 (0.0047)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0033 (0.0733)
+Z-score: 0.0444
+P: 0.9646
+
+Computing rg for phenotype 3/7
+Reading summary statistics from ./munge/SBP_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170810 SNPs with valid alleles.
+
+Heritability of phenotype 3/7
+-----------------------------
+Total Observed scale h2: 0.1695 (0.032)
+Lambda GC: 1.0557
+Mean Chi^2: 1.0551
+Intercept: 0.9974 (0.0069)
+Ratio < 0 (usually indicates GC correction).
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0065 (0.0081)
+Mean z1*z2: 0.0141
+Intercept: 0.0201 (0.0049)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0603 (0.0754)
+Z-score: -0.7995
+P: 0.424
+
+Computing rg for phenotype 4/7
+Reading summary statistics from ./munge/TGL_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170807 SNPs with valid alleles.
+
+Heritability of phenotype 4/7
+-----------------------------
+Total Observed scale h2: 0.1911 (0.0286)
+Lambda GC: 1.3685
+Mean Chi^2: 1.7583
+Intercept: 1.0446 (0.0294)
+Ratio: 0.0588 (0.0388)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0085 (0.0049)
+Mean z1*z2: -0.0401
+Intercept: -0.0117 (0.0071)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0745 (0.0396)
+Z-score: -1.8839
+P: 0.0596
+
+Computing rg for phenotype 5/7
+Reading summary statistics from ./munge/GHb_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170811 SNPs with valid alleles.
+
+Heritability of phenotype 5/7
+-----------------------------
+Total Observed scale h2: 0.1108 (0.0104)
+Lambda GC: 1.2764
+Mean Chi^2: 1.4767
+Intercept: 1.0617 (0.0269)
+Ratio: 0.1294 (0.0564)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0064 (0.0034)
+Mean z1*z2: 0.0321
+Intercept: 0.0105 (0.0058)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0741 (0.0393)
+Z-score: 1.8866
+P: 0.0592
+
+Computing rg for phenotype 6/7
+Reading summary statistics from ./munge/HDL_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170800 SNPs with valid alleles.
+
+Heritability of phenotype 6/7
+-----------------------------
+Total Observed scale h2: 0.2045 (0.0218)
+Lambda GC: 1.4494
+Mean Chi^2: 1.8558
+Intercept: 1.1685 (0.0655)
+Ratio: 0.1969 (0.0766)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0053 (0.0038)
+Mean z1*z2: -0.0339
+Intercept: -0.0108 (0.0065)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0446 (0.0328)
+Z-score: -1.3605
+P: 0.1737
+
+Computing rg for phenotype 7/7
+Reading summary statistics from ./munge/LDL_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170805 SNPs with valid alleles.
+
+Heritability of phenotype 7/7
+-----------------------------
+Total Observed scale h2: 0.0907 (0.0291)
+Lambda GC: 1.207
+Mean Chi^2: 1.4929
+Intercept: 1.1445 (0.1105)
+Ratio: 0.2932 (0.2242)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0025 (0.0035)
+Mean z1*z2: 0.0172
+Intercept: 0.0234 (0.0064)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0313 (0.0445)
+Z-score: -0.7028
+P: 0.4822
+
+
+Summary of Genetic Correlation Results
+p1                                p2      rg      se       z       p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+./munge/testo_f_raw_v3.sumstats.gz  ./munge/DBP_f_raw_v3.sumstats.gz  0.0033  0.0733  0.0444  0.9646  0.1521     0.0290  1.0001     0.0074    0.0183       0.0047
+./munge/testo_f_raw_v3.sumstats.gz  ./munge/SBP_f_raw_v3.sumstats.gz -0.0603  0.0754 -0.7995  0.4240  0.1695     0.0320  0.9974     0.0069    0.0201       0.0049
+./munge/testo_f_raw_v3.sumstats.gz  ./munge/TGL_f_raw_v3.sumstats.gz -0.0745  0.0396 -1.8839  0.0596  0.1911     0.0286  1.0446     0.0294   -0.0117       0.0071
+./munge/testo_f_raw_v3.sumstats.gz  ./munge/GHb_f_raw_v3.sumstats.gz  0.0741  0.0393  1.8866  0.0592  0.1108     0.0104  1.0617     0.0269    0.0105       0.0058
+./munge/testo_f_raw_v3.sumstats.gz  ./munge/HDL_f_raw_v3.sumstats.gz -0.0446  0.0328 -1.3605  0.1737  0.2045     0.0218  1.1685     0.0655   -0.0108       0.0065
+./munge/testo_f_raw_v3.sumstats.gz  ./munge/LDL_f_raw_v3.sumstats.gz -0.0313  0.0445 -0.7028  0.4822  0.0907     0.0291  1.1445     0.1105    0.0234       0.0064
+
+Analysis finished at Wed Aug  5 10:47:59 2026
+Total time elapsed: 36.43s

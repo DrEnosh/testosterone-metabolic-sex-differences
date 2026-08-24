@@ -1,0 +1,200 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 3.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out results\genetic_correlations\pairwise\all_traits_f_irnt \
+--rg data\processed\testo_f_irnt_v3.sumstats.gz,data\processed\HDL_f_irnt_v3.sumstats.gz,data\processed\LDL_f_irnt_v3.sumstats.gz,data\processed\TGL_f_irnt_v3.sumstats.gz,data\processed\GHb_f_irnt_v3.sumstats.gz,data\processed\SBP_f_irnt_v3.sumstats.gz,data\processed\DBP_f_irnt_v3.sumstats.gz \
+--ref-ld-chr reference\eur_w_ld_chr\ \
+--w-ld-chr reference\eur_w_ld_chr\ 
+
+Beginning analysis at Mon Aug 24 13:13:52 2026
+Reading summary statistics from data\processed\testo_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1191365 SNPs.
+Reading reference panel LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170811 SNPs remain.
+After merging with regression SNP LD, 1170811 SNPs remain.
+Computing rg for phenotype 2/7
+Reading summary statistics from data\processed\HDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170800 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1051 (0.0099)
+Lambda GC: 1.1908
+Mean Chi^2: 1.3437
+Intercept: 1.0253 (0.0131)
+Ratio: 0.0737 (0.038)
+
+Heritability of phenotype 2/7
+-----------------------------
+Total Observed scale h2: 0.2101 (0.0221)
+Lambda GC: 1.4637
+Mean Chi^2: 1.8726
+Intercept: 1.1673 (0.0646)
+Ratio: 0.1917 (0.0741)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0034 (0.0045)
+Mean z1*z2: -0.0323
+Intercept: -0.0133 (0.007)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0232 (0.0303)
+Z-score: -0.7641
+P: 0.4448
+
+Computing rg for phenotype 3/7
+Reading summary statistics from data\processed\LDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170804 SNPs with valid alleles.
+
+Heritability of phenotype 3/7
+-----------------------------
+Total Observed scale h2: 0.0881 (0.0279)
+Lambda GC: 1.2005
+Mean Chi^2: 1.4794
+Intercept: 1.1418 (0.1073)
+Ratio: 0.2959 (0.2239)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0013 (0.0039)
+Mean z1*z2: 0.0226
+Intercept: 0.026 (0.0069)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0137 (0.0403)
+Z-score: -0.3402
+P: 0.7337
+
+Computing rg for phenotype 4/7
+Reading summary statistics from data\processed\TGL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170807 SNPs with valid alleles.
+
+Heritability of phenotype 4/7
+-----------------------------
+Total Observed scale h2: 0.2186 (0.0313)
+Lambda GC: 1.4245
+Mean Chi^2: 1.8694
+Intercept: 1.0576 (0.0303)
+Ratio: 0.0663 (0.0348)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0101 (0.0059)
+Mean z1*z2: -0.0526
+Intercept: -0.0195 (0.0078)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.0667 (0.0358)
+Z-score: -1.8623
+P: 0.0626
+
+Computing rg for phenotype 5/7
+Reading summary statistics from data\processed\GHb_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170809 SNPs with valid alleles.
+
+Heritability of phenotype 5/7
+-----------------------------
+Total Observed scale h2: 0.1802 (0.0196)
+Lambda GC: 1.3754
+Mean Chi^2: 1.7954
+Intercept: 1.1086 (0.0428)
+Ratio: 0.1365 (0.0539)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0067 (0.0043)
+Mean z1*z2: 0.0362
+Intercept: 0.0119 (0.0068)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0488 (0.0321)
+Z-score: 1.5221
+P: 0.128
+
+Computing rg for phenotype 6/7
+Reading summary statistics from data\processed\SBP_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170810 SNPs with valid alleles.
+
+Heritability of phenotype 6/7
+-----------------------------
+Total Observed scale h2: 0.1711 (0.0321)
+Lambda GC: 1.0557
+Mean Chi^2: 1.0556
+Intercept: 0.9976 (0.0069)
+Ratio < 0 (usually indicates GC correction).
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0008 (0.0094)
+Mean z1*z2: 0.0213
+Intercept: 0.0208 (0.0053)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0058 (0.0705)
+Z-score: 0.0825
+P: 0.9343
+
+Computing rg for phenotype 7/7
+Reading summary statistics from data\processed\DBP_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170811 SNPs remain.
+1170810 SNPs with valid alleles.
+
+Heritability of phenotype 7/7
+-----------------------------
+Total Observed scale h2: 0.1574 (0.0289)
+Lambda GC: 1.0557
+Mean Chi^2: 1.0535
+Intercept: 0.9997 (0.0074)
+Ratio < 0 (usually indicates GC correction).
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0041 (0.0086)
+Mean z1*z2: 0.0233
+Intercept: 0.0202 (0.005)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0323 (0.0672)
+Z-score: 0.4796
+P: 0.6315
+
+
+Summary of Genetic Correlation Results
+                                        p1                                       p2      rg     se       z      p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+data\processed\testo_f_irnt_v3.sumstats.gz data\processed\HDL_f_irnt_v3.sumstats.gz -0.0232 0.0303 -0.7641 0.4448  0.2101     0.0221  1.1673     0.0646   -0.0133       0.0070
+data\processed\testo_f_irnt_v3.sumstats.gz data\processed\LDL_f_irnt_v3.sumstats.gz -0.0137 0.0403 -0.3402 0.7337  0.0881     0.0279  1.1418     0.1073    0.0260       0.0069
+data\processed\testo_f_irnt_v3.sumstats.gz data\processed\TGL_f_irnt_v3.sumstats.gz -0.0667 0.0358 -1.8623 0.0626  0.2186     0.0313  1.0576     0.0303   -0.0195       0.0078
+data\processed\testo_f_irnt_v3.sumstats.gz data\processed\GHb_f_irnt_v3.sumstats.gz  0.0488 0.0321  1.5221 0.1280  0.1802     0.0196  1.1086     0.0428    0.0119       0.0068
+data\processed\testo_f_irnt_v3.sumstats.gz data\processed\SBP_f_irnt_v3.sumstats.gz  0.0058 0.0705  0.0825 0.9343  0.1711     0.0321  0.9976     0.0069    0.0208       0.0053
+data\processed\testo_f_irnt_v3.sumstats.gz data\processed\DBP_f_irnt_v3.sumstats.gz  0.0323 0.0672  0.4796 0.6315  0.1574     0.0289  0.9997     0.0074    0.0202       0.0050
+
+Analysis finished at Mon Aug 24 13:14:18 2026
+Total time elapsed: 26.39s

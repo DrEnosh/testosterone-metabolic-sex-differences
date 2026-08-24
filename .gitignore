@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Large Genomic Data & Reference Panel files (> 50MB)
+data/raw/
+data/processed/*.tsv.bgz
+data/processed/*.sumstats.gz
+reference/eur_w_ld_chr/*.gz
+reference/eur_w_ld_chr/*.bz2
+reference/eur_w_ld_chr/*.tgz
+
+# Logs / Temp
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,92 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out ./gen_cor/GHb_f_irnt \
+--rg ./munge/GHb_f_irnt_v3.sumstats.gz,./munge/HDL_f_irnt_v3.sumstats.gz,./munge/LDL_f_irnt_v3.sumstats.gz \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Wed Aug  5 10:46:38 2026
+Reading summary statistics from ./munge/GHb_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1191363 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170809 SNPs remain.
+After merging with regression SNP LD, 1170809 SNPs remain.
+Computing rg for phenotype 2/3
+Reading summary statistics from ./munge/HDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170809 SNPs remain.
+1170798 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1802 (0.0196)
+Lambda GC: 1.3754
+Mean Chi^2: 1.7953
+Intercept: 1.1085 (0.0428)
+Ratio: 0.1364 (0.0539)
+
+Heritability of phenotype 2/3
+-----------------------------
+Total Observed scale h2: 0.2101 (0.0221)
+Lambda GC: 1.4637
+Mean Chi^2: 1.8726
+Intercept: 1.1673 (0.0646)
+Ratio: 0.1917 (0.0741)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.0344 (0.005)
+Mean z1*z2: -0.2911
+Intercept: -0.1868 (0.0081)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.1769 (0.0302)
+Z-score: -5.8646
+P: 4.5015e-09
+
+Computing rg for phenotype 3/3
+Reading summary statistics from ./munge/LDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170809 SNPs remain.
+1170802 SNPs with valid alleles.
+
+Heritability of phenotype 3/3
+-----------------------------
+Total Observed scale h2: 0.0881 (0.0279)
+Lambda GC: 1.2005
+Mean Chi^2: 1.4794
+Intercept: 1.1418 (0.1073)
+Ratio: 0.2957 (0.2239)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0209 (0.0048)
+Mean z1*z2: 0.0883
+Intercept: 0.007 (0.0084)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.1658 (0.0492)
+Z-score: 3.3687
+P: 0.0008
+
+
+Summary of Genetic Correlation Results
+p1                                 p2      rg      se       z           p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+./munge/GHb_f_irnt_v3.sumstats.gz  ./munge/HDL_f_irnt_v3.sumstats.gz -0.1769  0.0302 -5.8646  4.5015e-09  0.2101     0.0221  1.1673     0.0646   -0.1868       0.0081
+./munge/GHb_f_irnt_v3.sumstats.gz  ./munge/LDL_f_irnt_v3.sumstats.gz  0.1658  0.0492  3.3687  7.5536e-04  0.0881     0.0279  1.1418     0.1073    0.0070       0.0084
+
+Analysis finished at Wed Aug  5 10:47:04 2026
+Total time elapsed: 26.26s

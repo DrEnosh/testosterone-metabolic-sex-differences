@@ -1,0 +1,32 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 munge/testo_m_raw_v3.sumstats.gz \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out h2/testo_m_raw_v3 \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Mon Aug  3 12:21:18 2026
+Reading summary statistics from munge/testo_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1191356 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170802 SNPs remain.
+After merging with regression SNP LD, 1170802 SNPs remain.
+Using two-step estimator with cutoff at 30.
+Total Observed scale h2: 0.1781 (0.0272)
+Lambda GC: 1.3135
+Mean Chi^2: 1.5989
+Intercept: 1.045 (0.0112)
+Ratio: 0.0751 (0.0187)
+Analysis finished at Mon Aug  3 12:21:25 2026
+Total time elapsed: 7.21s

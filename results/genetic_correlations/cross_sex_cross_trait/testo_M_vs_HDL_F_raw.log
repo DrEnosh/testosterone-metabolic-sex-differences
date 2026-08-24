@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 3.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out results\genetic_correlations\cross_sex_cross_trait\testo_M_vs_HDL_F_raw \
+--rg data\processed\testo_m_raw_v3.sumstats.gz,data\processed\HDL_f_raw_v3.sumstats.gz \
+--ref-ld-chr reference\eur_w_ld_chr\ \
+--w-ld-chr reference\eur_w_ld_chr\ 
+
+Beginning analysis at Mon Aug 24 13:09:25 2026
+Reading summary statistics from data\processed\testo_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1191356 SNPs.
+Reading reference panel LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170802 SNPs remain.
+After merging with regression SNP LD, 1170802 SNPs remain.
+Computing rg for phenotype 2/2
+Reading summary statistics from data\processed\HDL_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170802 SNPs remain.
+1170791 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1796 (0.0242)
+Lambda GC: 1.3135
+Mean Chi^2: 1.5989
+Intercept: 1.0413 (0.0403)
+Ratio: 0.069 (0.0672)
+
+Heritability of phenotype 2/2
+-----------------------------
+Total Observed scale h2: 0.2045 (0.0218)
+Lambda GC: 1.4494
+Mean Chi^2: 1.8557
+Intercept: 1.1685 (0.0655)
+Ratio: 0.197 (0.0766)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0612 (0.0066)
+Mean z1*z2: 0.199
+Intercept: 0.0005 (0.0092)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.3195 (0.0266)
+Z-score: 12.0104
+P: 3.1317e-33
+
+
+Summary of Genetic Correlation Results
+                                       p1                                      p2     rg     se       z      p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+data\processed\testo_m_raw_v3.sumstats.gz data\processed\HDL_f_raw_v3.sumstats.gz 0.3195 0.0266 12.0104 0.0000  0.2045     0.0218  1.1685     0.0655    0.0005       0.0092
+
+Analysis finished at Mon Aug 24 13:09:35 2026
+Total time elapsed: 10.45s

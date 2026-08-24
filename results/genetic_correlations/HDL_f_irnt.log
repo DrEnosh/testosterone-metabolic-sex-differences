@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out ./gen_cor/HDL_f_irnt \
+--rg ./munge/HDL_f_irnt_v3.sumstats.gz,./munge/LDL_f_irnt_v3.sumstats.gz \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Wed Aug  5 10:47:05 2026
+Reading summary statistics from ./munge/HDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1191354 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170800 SNPs remain.
+After merging with regression SNP LD, 1170800 SNPs remain.
+Computing rg for phenotype 2/2
+Reading summary statistics from ./munge/LDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170800 SNPs remain.
+1170793 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.2125 (0.0218)
+Lambda GC: 1.4637
+Mean Chi^2: 1.8719
+Intercept: 1.1601 (0.0633)
+Ratio: 0.1837 (0.0727)
+
+Heritability of phenotype 2/2
+-----------------------------
+Total Observed scale h2: 0.0883 (0.028)
+Lambda GC: 1.2005
+Mean Chi^2: 1.4781
+Intercept: 1.1394 (0.1073)
+Ratio: 0.2917 (0.2245)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0089 (0.0083)
+Mean z1*z2: 0.0154
+Intercept: -0.0243 (0.0266)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0649 (0.0638)
+Z-score: 1.0175
+P: 0.3089
+
+
+Summary of Genetic Correlation Results
+p1                                 p2      rg      se       z       p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+./munge/HDL_f_irnt_v3.sumstats.gz  ./munge/LDL_f_irnt_v3.sumstats.gz  0.0649  0.0638  1.0175  0.3089  0.0883      0.028  1.1394     0.1073   -0.0243       0.0266
+
+Analysis finished at Wed Aug  5 10:47:22 2026
+Total time elapsed: 17.2s

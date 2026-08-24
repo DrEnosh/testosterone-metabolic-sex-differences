@@ -1,0 +1,50 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./munge_sumstats.py \
+--out munge/TGL_m_irnt_v3 \
+--merge-alleles ./ldsc/eur_w_ld_chr/w_hm3.snplist \
+--N-col n_complete_samples \
+--chunksize 500000 \
+--sumstats TGL_m_irnt_v3.tsv 
+
+Interpreting column names as follows:
+info:	INFO score (imputation quality; higher --> better imputation)
+rsid:	Variant ID (e.g., rs number)
+n_complete_samples:	Sample size
+A1:	Allele 1, interpreted as ref allele for signed sumstat.
+pval:	p-Value
+beta:	[linear/logistic] regression coefficient (0 --> no effect; above 0 --> A1 is trait/risk increasing)
+A2:	Allele 2, interpreted as non-ref allele for signed sumstat.
+
+Reading list of SNPs for allele merge from ./ldsc/eur_w_ld_chr/w_hm3.snplist
+Read 1217311 SNPs for allele merge.
+Reading sumstats from TGL_m_irnt_v3.tsv into memory 500000 SNPs at a time.
+WARNING: 3 SNPs had P outside of (0,1]. The P column may be mislabeled.
+Read 13791467 SNPs from --sumstats file.
+Removed 12585163 SNPs not in --merge-alleles.
+Removed 4016 SNPs with missing values.
+Removed 9868 SNPs with INFO <= 0.9.
+Removed 0 SNPs with MAF <= 0.01.
+Removed 3 SNPs with out-of-bounds p-values.
+Removed 343 variants that were not SNPs or were strand-ambiguous.
+1192074 SNPs remain.
+Removed 469 SNPs with duplicated rs numbers (1191605 SNPs remain).
+Removed 0 SNPs with N < 106071.333333 (1191605 SNPs remain).
+Median value of beta was -4.0577e-06, which seems sensible.
+Removed 243 SNPs whose alleles did not match --merge-alleles (1191362 SNPs remain).
+Writing summary statistics for 1217311 SNPs (1191362 with nonmissing beta) to munge/TGL_m_irnt_v3.sumstats.gz.
+
+Metadata:
+Mean chi^2 = 1.699
+Lambda GC = 1.318
+Max chi^2 = 1424.989
+3007 Genome-wide significant SNPs (some may have been removed by filtering).
+
+Conversion finished at Sat Aug  1 15:59:13 2026
+Total time elapsed: 1.0m:22.99s

@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out ./gen_cor/HDL_m_raw \
+--rg ./munge/HDL_m_raw_v3.sumstats.gz,./munge/LDL_m_raw_v3.sumstats.gz \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Wed Aug  5 10:43:28 2026
+Reading summary statistics from ./munge/HDL_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1191354 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170800 SNPs remain.
+After merging with regression SNP LD, 1170800 SNPs remain.
+Computing rg for phenotype 2/2
+Reading summary statistics from ./munge/LDL_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170800 SNPs remain.
+1170798 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1981 (0.0276)
+Lambda GC: 1.3719
+Mean Chi^2: 1.7145
+Intercept: 1.1229 (0.0547)
+Ratio: 0.1721 (0.0766)
+
+Heritability of phenotype 2/2
+-----------------------------
+Total Observed scale h2: 0.0671 (0.0234)
+Lambda GC: 1.1811
+Mean Chi^2: 1.3379
+Intercept: 1.1182 (0.0741)
+Ratio: 0.3498 (0.2191)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0397 (0.0076)
+Mean z1*z2: 0.2254
+Intercept: 0.1025 (0.0195)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.3446 (0.0982)
+Z-score: 3.5108
+P: 0.0004
+
+
+Summary of Genetic Correlation Results
+p1                                p2      rg      se       z       p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+./munge/HDL_m_raw_v3.sumstats.gz  ./munge/LDL_m_raw_v3.sumstats.gz  0.3446  0.0982  3.5108  0.0004  0.0671     0.0234  1.1182     0.0741    0.1025       0.0195
+
+Analysis finished at Wed Aug  5 10:43:44 2026
+Total time elapsed: 15.72s

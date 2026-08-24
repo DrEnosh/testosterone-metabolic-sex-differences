@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 3.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out results\genetic_correlations\cross_sex_cross_trait\testo_M_vs_LDL_F_raw \
+--rg data\processed\testo_m_raw_v3.sumstats.gz,data\processed\LDL_f_raw_v3.sumstats.gz \
+--ref-ld-chr reference\eur_w_ld_chr\ \
+--w-ld-chr reference\eur_w_ld_chr\ 
+
+Beginning analysis at Mon Aug 24 13:09:36 2026
+Reading summary statistics from data\processed\testo_m_raw_v3.sumstats.gz ...
+Read summary statistics for 1191356 SNPs.
+Reading reference panel LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from reference\eur_w_ld_chr\[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170802 SNPs remain.
+After merging with regression SNP LD, 1170802 SNPs remain.
+Computing rg for phenotype 2/2
+Reading summary statistics from data\processed\LDL_f_raw_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170802 SNPs remain.
+1170796 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.1797 (0.0242)
+Lambda GC: 1.3135
+Mean Chi^2: 1.5989
+Intercept: 1.0411 (0.0402)
+Ratio: 0.0687 (0.0672)
+
+Heritability of phenotype 2/2
+-----------------------------
+Total Observed scale h2: 0.0907 (0.0291)
+Lambda GC: 1.207
+Mean Chi^2: 1.4928
+Intercept: 1.1445 (0.1105)
+Ratio: 0.2933 (0.2242)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0062 (0.006)
+Mean z1*z2: 0.0073
+Intercept: -0.0108 (0.0093)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.0485 (0.0485)
+Z-score: 0.9998
+P: 0.3174
+
+
+Summary of Genetic Correlation Results
+                                       p1                                      p2     rg     se      z      p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+data\processed\testo_m_raw_v3.sumstats.gz data\processed\LDL_f_raw_v3.sumstats.gz 0.0485 0.0485 0.9998 0.3174  0.0907     0.0291  1.1445     0.1105   -0.0108       0.0093
+
+Analysis finished at Mon Aug 24 13:09:47 2026
+Total time elapsed: 10.89s

@@ -1,0 +1,85 @@
+Trait_1_Code,Trait_1,Trait_2_Code,Trait_2,Sex,Transformation,rg,SE,rg_95CI_Lower,rg_95CI_Upper,Z,P,Source_Log
+testo,Testosterone,HDL,HDL Cholesterol,Male,IRNT,0.2942,0.0294,0.236576,0.351824,10.0096,0.0,all_traits_m_irnt.log
+testo,Testosterone,LDL,LDL Cholesterol,Male,IRNT,0.1276,0.0585,0.012939999999999993,0.24225999999999998,2.1832,0.029,all_traits_m_irnt.log
+testo,Testosterone,TGL,Triglycerides,Male,IRNT,-0.3693,0.0409,-0.44946400000000003,-0.289136,-9.0305,0.0,all_traits_m_irnt.log
+testo,Testosterone,GHb,Glycated Haemoglobin (HbA1c),Male,IRNT,-0.2384,0.03,-0.2972,-0.1796,-7.9381,0.0,all_traits_m_irnt.log
+testo,Testosterone,SBP,Systolic Blood Pressure,Male,IRNT,-0.1156,0.0708,-0.254368,0.023168000000000008,-1.6328,0.1025,all_traits_m_irnt.log
+testo,Testosterone,DBP,Diastolic Blood Pressure,Male,IRNT,-0.1132,0.0659,-0.242364,0.015964000000000006,-1.7194,0.0855,all_traits_m_irnt.log
+testo,Testosterone,HDL,HDL Cholesterol,Male,Raw,0.2858,0.0295,0.22798000000000002,0.34362,9.7044,0.0,all_traits_m_raw.log
+testo,Testosterone,LDL,LDL Cholesterol,Male,Raw,0.1193,0.0575,0.006599999999999995,0.232,2.0746,0.038,all_traits_m_raw.log
+testo,Testosterone,TGL,Triglycerides,Male,Raw,-0.358,0.0438,-0.44384799999999996,-0.272152,-8.1656,0.0,all_traits_m_raw.log
+testo,Testosterone,GHb,Glycated Haemoglobin (HbA1c),Male,Raw,-0.2709,0.0346,-0.33871599999999996,-0.203084,-7.8354,0.0,all_traits_m_raw.log
+testo,Testosterone,SBP,Systolic Blood Pressure,Male,Raw,-0.1051,0.0761,-0.25425600000000004,0.04405600000000001,-1.3809,0.1673,all_traits_m_raw.log
+testo,Testosterone,DBP,Diastolic Blood Pressure,Male,Raw,-0.1062,0.0643,-0.232228,0.019828,-1.6512,0.0987,all_traits_m_raw.log
+DBP,Diastolic Blood Pressure,SBP,Systolic Blood Pressure,Female,IRNT,0.6796,0.0681,0.546124,0.8130759999999999,9.9846,1.7794e-23,DBP_f_irnt.log
+DBP,Diastolic Blood Pressure,TGL,Triglycerides,Female,IRNT,0.1245,0.0641,-0.0011359999999999981,0.250136,1.9417,0.052169,DBP_f_irnt.log
+DBP,Diastolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Female,IRNT,0.0688,0.0614,-0.051544000000000006,0.189144,1.1204,0.26254,DBP_f_irnt.log
+DBP,Diastolic Blood Pressure,HDL,HDL Cholesterol,Female,IRNT,-0.1807,0.051,-0.28066,-0.08074,-3.5416,0.00039765,DBP_f_irnt.log
+DBP,Diastolic Blood Pressure,LDL,LDL Cholesterol,Female,IRNT,0.0482,0.0834,-0.115264,0.211664,0.5777,0.56347,DBP_f_irnt.log
+DBP,Diastolic Blood Pressure,SBP,Systolic Blood Pressure,Female,Raw,0.6662,0.071,0.5270400000000001,0.80536,9.3902,5.9874e-21,DBP_f_raw.log
+DBP,Diastolic Blood Pressure,TGL,Triglycerides,Female,Raw,0.0899,0.0695,-0.046320000000000014,0.22612,1.2934,0.19587,DBP_f_raw.log
+DBP,Diastolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Female,Raw,0.0746,0.0681,-0.058875999999999984,0.20807599999999998,1.0956,0.27327,DBP_f_raw.log
+DBP,Diastolic Blood Pressure,HDL,HDL Cholesterol,Female,Raw,-0.1745,0.0532,-0.27877199999999996,-0.070228,-3.2812,0.0010338,DBP_f_raw.log
+DBP,Diastolic Blood Pressure,LDL,LDL Cholesterol,Female,Raw,0.0593,0.085,-0.1073,0.2259,0.6979,0.48522,DBP_f_raw.log
+DBP,Diastolic Blood Pressure,SBP,Systolic Blood Pressure,Male,IRNT,0.6825,0.1048,0.47709199999999996,0.887908,6.51,7.5133e-11,DBP_m_irnt.log
+DBP,Diastolic Blood Pressure,TGL,Triglycerides,Male,IRNT,0.0919,0.0666,-0.03863600000000002,0.22243600000000002,1.3793,0.16781,DBP_m_irnt.log
+DBP,Diastolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Male,IRNT,0.0461,0.0719,-0.09482400000000002,0.18702400000000002,0.6417,0.52108,DBP_m_irnt.log
+DBP,Diastolic Blood Pressure,HDL,HDL Cholesterol,Male,IRNT,-0.1545,0.0751,-0.30169599999999996,-0.007304000000000005,-2.0588,0.039509,DBP_m_irnt.log
+DBP,Diastolic Blood Pressure,LDL,LDL Cholesterol,Male,IRNT,-0.1115,0.1095,-0.32612,0.10312,-1.0182,0.30856,DBP_m_irnt.log
+DBP,Diastolic Blood Pressure,SBP,Systolic Blood Pressure,Male,Raw,0.7047,0.1047,0.499488,0.909912,6.7324,1.6684e-11,DBP_m_raw.log
+DBP,Diastolic Blood Pressure,TGL,Triglycerides,Male,Raw,0.0902,0.0722,-0.051311999999999997,0.231712,1.2496,0.21146,DBP_m_raw.log
+DBP,Diastolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Male,Raw,0.1042,0.08,-0.052599999999999994,0.261,1.3023,0.19281,DBP_m_raw.log
+DBP,Diastolic Blood Pressure,HDL,HDL Cholesterol,Male,Raw,-0.1642,0.0761,-0.313356,-0.015044000000000002,-2.1567,0.03103,DBP_m_raw.log
+DBP,Diastolic Blood Pressure,LDL,LDL Cholesterol,Male,Raw,-0.105,0.1078,-0.316288,0.10628800000000001,-0.9745,0.32982,DBP_m_raw.log
+GHb,Glycated Haemoglobin (HbA1c),HDL,HDL Cholesterol,Female,IRNT,-0.1769,0.0302,-0.236092,-0.11770800000000001,-5.8646,4.5015e-09,GHb_f_irnt.log
+GHb,Glycated Haemoglobin (HbA1c),LDL,LDL Cholesterol,Female,IRNT,0.1658,0.0492,0.069368,0.262232,3.3687,0.00075536,GHb_f_irnt.log
+GHb,Glycated Haemoglobin (HbA1c),HDL,HDL Cholesterol,Female,Raw,-0.2651,0.0353,-0.33428800000000003,-0.195912,-7.5154,5.674e-14,GHb_f_raw.log
+GHb,Glycated Haemoglobin (HbA1c),LDL,LDL Cholesterol,Female,Raw,0.1769,0.0526,0.07380400000000001,0.279996,3.3625,0.00077229,GHb_f_raw.log
+GHb,Glycated Haemoglobin (HbA1c),HDL,HDL Cholesterol,Male,IRNT,-0.1574,0.0367,-0.22933200000000004,-0.085468,-4.2845,1.8319e-05,GHb_m_irnt.log
+GHb,Glycated Haemoglobin (HbA1c),LDL,LDL Cholesterol,Male,IRNT,-0.0169,0.0453,-0.10568799999999999,0.071888,-0.3729,0.70922,GHb_m_irnt.log
+GHb,Glycated Haemoglobin (HbA1c),HDL,HDL Cholesterol,Male,Raw,-0.2932,0.0409,-0.37336400000000003,-0.213036,-7.1673,7.6475e-13,GHb_m_raw.log
+GHb,Glycated Haemoglobin (HbA1c),LDL,LDL Cholesterol,Male,Raw,-0.1086,0.0473,-0.201308,-0.015892000000000003,-2.2958,0.021685,GHb_m_raw.log
+HDL,HDL Cholesterol,LDL,LDL Cholesterol,Female,IRNT,0.0649,0.0638,-0.06014799999999999,0.189948,1.0175,0.3089,HDL_f_irnt.log
+HDL,HDL Cholesterol,LDL,LDL Cholesterol,Female,Raw,0.0586,0.067,-0.07271999999999999,0.18991999999999998,0.8751,0.3815,HDL_f_raw.log
+HDL,HDL Cholesterol,LDL,LDL Cholesterol,Male,IRNT,0.3573,0.0996,0.16208400000000003,0.552516,3.5878,0.0003,HDL_m_irnt.log
+HDL,HDL Cholesterol,LDL,LDL Cholesterol,Male,Raw,0.3446,0.0982,0.15212800000000004,0.537072,3.5108,0.0004,HDL_m_raw.log
+SBP,Systolic Blood Pressure,TGL,Triglycerides,Female,IRNT,0.1293,0.0622,0.007388000000000006,0.251212,2.079,0.0376,SBP_f_irnt.log
+SBP,Systolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Female,IRNT,0.1344,0.0578,0.021112000000000006,0.24768799999999996,2.3246,0.0201,SBP_f_irnt.log
+SBP,Systolic Blood Pressure,HDL,HDL Cholesterol,Female,IRNT,-0.097,0.053,-0.20088,0.006879999999999997,-1.8294,0.0673,SBP_f_irnt.log
+SBP,Systolic Blood Pressure,LDL,LDL Cholesterol,Female,IRNT,-0.0094,0.0779,-0.16208399999999998,0.143284,-0.1201,0.9044,SBP_f_irnt.log
+SBP,Systolic Blood Pressure,TGL,Triglycerides,Female,Raw,0.073,0.0654,-0.055184,0.20118399999999997,1.1165,0.2642,SBP_f_raw.log
+SBP,Systolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Female,Raw,0.1147,0.0625,-0.007800000000000001,0.2372,1.8351,0.0665,SBP_f_raw.log
+SBP,Systolic Blood Pressure,HDL,HDL Cholesterol,Female,Raw,-0.0776,0.0535,-0.18246,0.027259999999999993,-1.4492,0.1473,SBP_f_raw.log
+SBP,Systolic Blood Pressure,LDL,LDL Cholesterol,Female,Raw,-0.0056,0.0796,-0.161616,0.15041600000000002,-0.0699,0.9443,SBP_f_raw.log
+SBP,Systolic Blood Pressure,TGL,Triglycerides,Male,IRNT,0.0747,0.0621,-0.047016,0.196416,1.2032,0.2289,SBP_m_irnt.log
+SBP,Systolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Male,IRNT,0.0038,0.0696,-0.13261599999999998,0.14021599999999998,0.0541,0.9569,SBP_m_irnt.log
+SBP,Systolic Blood Pressure,HDL,HDL Cholesterol,Male,IRNT,-0.0845,0.0687,-0.219152,0.05015199999999999,-1.2299,0.2187,SBP_m_irnt.log
+SBP,Systolic Blood Pressure,LDL,LDL Cholesterol,Male,IRNT,-0.1846,0.1157,-0.41137199999999996,0.042172000000000015,-1.5945,0.1108,SBP_m_irnt.log
+SBP,Systolic Blood Pressure,TGL,Triglycerides,Male,Raw,0.075,0.0695,-0.06122000000000001,0.21122000000000002,1.079,0.2806,SBP_m_raw.log
+SBP,Systolic Blood Pressure,GHb,Glycated Haemoglobin (HbA1c),Male,Raw,0.0518,0.079,-0.10304,0.20664,0.6557,0.512,SBP_m_raw.log
+SBP,Systolic Blood Pressure,HDL,HDL Cholesterol,Male,Raw,-0.0974,0.0721,-0.23871599999999998,0.043916,-1.3512,0.1766,SBP_m_raw.log
+SBP,Systolic Blood Pressure,LDL,LDL Cholesterol,Male,Raw,-0.1801,0.1238,-0.422748,0.06254799999999996,-1.4551,0.1457,SBP_m_raw.log
+testo,Testosterone,DBP,Diastolic Blood Pressure,Female,IRNT,0.0323,0.0672,-0.099412,0.164012,0.4796,0.6315,testo_f_irnt.log
+testo,Testosterone,SBP,Systolic Blood Pressure,Female,IRNT,0.0058,0.0705,-0.13238,0.14398,0.0825,0.9343,testo_f_irnt.log
+testo,Testosterone,TGL,Triglycerides,Female,IRNT,-0.0667,0.0358,-0.136868,0.003467999999999999,-1.8623,0.0626,testo_f_irnt.log
+testo,Testosterone,GHb,Glycated Haemoglobin (HbA1c),Female,IRNT,0.0488,0.0321,-0.014115999999999983,0.11171599999999998,1.5221,0.128,testo_f_irnt.log
+testo,Testosterone,HDL,HDL Cholesterol,Female,IRNT,-0.0232,0.0303,-0.082588,0.036188000000000005,-0.7641,0.4448,testo_f_irnt.log
+testo,Testosterone,LDL,LDL Cholesterol,Female,IRNT,-0.0137,0.0403,-0.092688,0.065288,-0.3402,0.7337,testo_f_irnt.log
+testo,Testosterone,DBP,Diastolic Blood Pressure,Female,Raw,0.0033,0.0733,-0.14036800000000002,0.14696800000000002,0.0444,0.9646,testo_f_raw.log
+testo,Testosterone,SBP,Systolic Blood Pressure,Female,Raw,-0.0603,0.0754,-0.208084,0.087484,-0.7995,0.424,testo_f_raw.log
+testo,Testosterone,TGL,Triglycerides,Female,Raw,-0.0745,0.0396,-0.152116,0.0031160000000000077,-1.8839,0.0596,testo_f_raw.log
+testo,Testosterone,GHb,Glycated Haemoglobin (HbA1c),Female,Raw,0.0741,0.0393,-0.002928,0.15112799999999998,1.8866,0.0592,testo_f_raw.log
+testo,Testosterone,HDL,HDL Cholesterol,Female,Raw,-0.0446,0.0328,-0.108888,0.019687999999999997,-1.3605,0.1737,testo_f_raw.log
+testo,Testosterone,LDL,LDL Cholesterol,Female,Raw,-0.0313,0.0445,-0.11851999999999999,0.05591999999999999,-0.7028,0.4822,testo_f_raw.log
+TGL,Triglycerides,GHb,Glycated Haemoglobin (HbA1c),Female,IRNT,0.2522,0.041,0.17184,0.33255999999999997,6.1521,7.6486e-10,TGL_f_irnt.log
+TGL,Triglycerides,HDL,HDL Cholesterol,Female,IRNT,-0.6498,0.0534,-0.754464,-0.5451360000000001,-12.1738,4.286e-34,TGL_f_irnt.log
+TGL,Triglycerides,LDL,LDL Cholesterol,Female,IRNT,0.4458,0.0782,0.29252799999999995,0.599072,5.6974,1.2165e-08,TGL_f_irnt.log
+TGL,Triglycerides,GHb,Glycated Haemoglobin (HbA1c),Female,Raw,0.3338,0.0467,0.24226799999999998,0.425332,7.1562,8.2931e-13,TGL_f_raw.log
+TGL,Triglycerides,HDL,HDL Cholesterol,Female,Raw,-0.6404,0.0574,-0.752904,-0.5278959999999999,-11.1562,6.6801e-29,TGL_f_raw.log
+TGL,Triglycerides,LDL,LDL Cholesterol,Female,Raw,0.447,0.0837,0.282948,0.611052,5.3372,9.4368e-08,TGL_f_raw.log
+TGL,Triglycerides,GHb,Glycated Haemoglobin (HbA1c),Male,IRNT,0.1916,0.047,0.09948,0.28371999999999997,4.079,4.5236e-05,TGL_m_irnt.log
+TGL,Triglycerides,HDL,HDL Cholesterol,Male,IRNT,-0.622,0.0615,-0.74254,-0.50146,-10.1213,4.4462e-24,TGL_m_irnt.log
+TGL,Triglycerides,LDL,LDL Cholesterol,Male,IRNT,0.2117,0.084,0.04705999999999999,0.37634,2.5189,0.011774,TGL_m_irnt.log
+TGL,Triglycerides,GHb,Glycated Haemoglobin (HbA1c),Male,Raw,0.277,0.0559,0.16743600000000003,0.386564,4.9572,7.15e-07,TGL_m_raw.log
+TGL,Triglycerides,HDL,HDL Cholesterol,Male,Raw,-0.5973,0.0641,-0.722936,-0.4716640000000001,-9.3141,1.2305e-20,TGL_m_raw.log
+TGL,Triglycerides,LDL,LDL Cholesterol,Male,Raw,0.2141,0.0842,0.04906800000000003,0.379132,2.5438,0.010966,TGL_m_raw.log

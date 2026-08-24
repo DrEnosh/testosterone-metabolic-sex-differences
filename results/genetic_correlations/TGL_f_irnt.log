@@ -1,0 +1,119 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--ref-ld-chr ./ldsc/eur_w_ld_chr/ \
+--out ./gen_cor/TGL_f_irnt \
+--rg ./munge/TGL_f_irnt_v3.sumstats.gz,./munge/GHb_f_irnt_v3.sumstats.gz,./munge/HDL_f_irnt_v3.sumstats.gz,./munge/LDL_f_irnt_v3.sumstats.gz \
+--w-ld-chr ./ldsc/eur_w_ld_chr/ 
+
+Beginning analysis at Wed Aug  5 10:46:09 2026
+Reading summary statistics from ./munge/TGL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1191361 SNPs.
+Reading reference panel LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read reference panel LD Scores for 1290028 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from ./ldsc/eur_w_ld_chr/[1-22] ...
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 1170807 SNPs remain.
+After merging with regression SNP LD, 1170807 SNPs remain.
+Computing rg for phenotype 2/4
+Reading summary statistics from ./munge/GHb_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170807 SNPs remain.
+1170805 SNPs with valid alleles.
+
+Heritability of phenotype 1
+---------------------------
+Total Observed scale h2: 0.2186 (0.0313)
+Lambda GC: 1.4245
+Mean Chi^2: 1.8694
+Intercept: 1.0576 (0.0303)
+Ratio: 0.0663 (0.0348)
+
+Heritability of phenotype 2/4
+-----------------------------
+Total Observed scale h2: 0.1802 (0.0196)
+Lambda GC: 1.3754
+Mean Chi^2: 1.7954
+Intercept: 1.1086 (0.0428)
+Ratio: 0.1365 (0.0539)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0501 (0.0062)
+Mean z1*z2: 0.3837
+Intercept: 0.211 (0.01)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.2522 (0.041)
+Z-score: 6.1521
+P: 7.6486e-10
+
+Computing rg for phenotype 3/4
+Reading summary statistics from ./munge/HDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170807 SNPs remain.
+1170796 SNPs with valid alleles.
+
+Heritability of phenotype 3/4
+-----------------------------
+Total Observed scale h2: 0.2097 (0.022)
+Lambda GC: 1.4637
+Mean Chi^2: 1.8719
+Intercept: 1.1676 (0.0646)
+Ratio: 0.1922 (0.0741)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: -0.1391 (0.0193)
+Mean z1*z2: -0.9733
+Intercept: -0.5024 (0.0202)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: -0.6498 (0.0534)
+Z-score: -12.1738
+P: 4.286e-34
+
+Computing rg for phenotype 4/4
+Reading summary statistics from ./munge/LDL_f_irnt_v3.sumstats.gz ...
+Read summary statistics for 1217311 SNPs.
+After merging with summary statistics, 1170807 SNPs remain.
+1170800 SNPs with valid alleles.
+
+Heritability of phenotype 4/4
+-----------------------------
+Total Observed scale h2: 0.0879 (0.0279)
+Lambda GC: 1.2005
+Mean Chi^2: 1.4789
+Intercept: 1.142 (0.1073)
+Ratio: 0.2965 (0.2241)
+
+Genetic Covariance
+------------------
+Total Observed scale gencov: 0.0621 (0.0117)
+Mean z1*z2: 0.5478
+Intercept: 0.3311 (0.0134)
+
+Genetic Correlation
+-------------------
+Genetic Correlation: 0.4458 (0.0782)
+Z-score: 5.6974
+P: 1.2165e-08
+
+
+Summary of Genetic Correlation Results
+p1                                 p2      rg      se        z           p  h2_obs  h2_obs_se  h2_int  h2_int_se  gcov_int  gcov_int_se
+./munge/TGL_f_irnt_v3.sumstats.gz  ./munge/GHb_f_irnt_v3.sumstats.gz  0.2522  0.0410   6.1521  7.6486e-10  0.1802     0.0196  1.1086     0.0428    0.2110       0.0100
+./munge/TGL_f_irnt_v3.sumstats.gz  ./munge/HDL_f_irnt_v3.sumstats.gz -0.6498  0.0534 -12.1738  4.2860e-34  0.2097     0.0220  1.1676     0.0646   -0.5024       0.0202
+./munge/TGL_f_irnt_v3.sumstats.gz  ./munge/LDL_f_irnt_v3.sumstats.gz  0.4458  0.0782   5.6974  1.2165e-08  0.0879     0.0279  1.1420     0.1073    0.3311       0.0134
+
+Analysis finished at Wed Aug  5 10:46:37 2026
+Total time elapsed: 27.87s
