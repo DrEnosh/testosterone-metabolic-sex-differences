@@ -1,10 +1,10 @@
 # BDSA Project: Sex Differences in the Genetic Architecture of Testosterone and Metabolic Traits in Humans
 
-An autonomous bioinformatics and statistical genetics pipeline utilizing **Linkage Disequilibrium Score Regression (LDSC)** to evaluate sex-stratified genetic architecture, SNP heritability ($h^2$), and cross-trait / cross-sex genetic correlations ($r_g$).
+A bioinformatics and statistical genetics pipeline that uses **Linkage Disequilibrium Score Regression (LDSC)** to evaluate sex-stratified genetic architecture, SNP heritability ($h^2$), and cross-trait / cross-sex genetic correlations ($r_g$).
 
 ---
 
-## 📌 Objectives
+## Objectives
 1. **SNP Heritability ($h^2$):** Estimate sex-stratified SNP heritability for 7 key phenotypes (Testosterone, HDL-C, LDL-C, Triglycerides, HbA1c, SBP, DBP) across transformations (`IRNT` and `Raw`).
 2. **Between-Sex Genetic Correlation:** Quantify polygenic concordance ($r_g$) between males and females for each phenotype.
 3. **Between-Trait Genetic Correlation:** Evaluate pairwise genetic correlations among all cardiometabolic traits separately in males and females.
@@ -12,7 +12,7 @@ An autonomous bioinformatics and statistical genetics pipeline utilizing **Linka
 
 ---
 
-## 🔬 Key Scientific Findings
+## Key Scientific Findings
 - **Near-Zero Between-Sex Genetic Correlation for Testosterone:** $r_g = 0.0249 \pm 0.0510$ ($P = 0.626; P_{\text{diff from 1.0}} < 10^{-50}$), demonstrating profound sexual dimorphism and distinct polygenic control in men versus women.
 - **High Genetic Concordance for Cardiometabolic Traits:** All metabolic phenotypes show high genetic stability across sexes (HbA1c $r_g = 0.969$; Triglycerides $r_g = 0.910$; HDL-C $r_g = 0.903$; LDL-C $r_g = 0.819$; SBP $r_g = 0.814$; DBP $r_g = 0.673$).
 - **Sex-Divergent Metabolic Impact of Testosterone:**
@@ -21,7 +21,7 @@ An autonomous bioinformatics and statistical genetics pipeline utilizing **Linka
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```
 BDSA PROJECT/
 ├── data/
@@ -62,7 +62,7 @@ BDSA PROJECT/
 
 ---
 
-## 🚀 Execution & Reproducibility
+## Execution & Reproducibility
 
 ### PowerShell (Windows):
 ```powershell
@@ -76,7 +76,7 @@ bash scripts/run_pipeline.sh
 
 ---
 
-## 📊 Summary Tables
+## Summary Tables
 All output tables are available in `results/tables/`:
 - `snp_heritability_summary.csv`
 - `between_sex_genetic_correlation.csv`
@@ -85,5 +85,5 @@ All output tables are available in `results/tables/`:
 
 ---
 
-## 📜 Full Report
+## Full Report
 For the complete methodology, biological discussion, and detailed statistics, refer to [results/reports/BDSA_PROJECT_FINAL_REPORT.md](results/reports/BDSA_PROJECT_FINAL_REPORT.md).
